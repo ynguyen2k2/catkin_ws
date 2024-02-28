@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jetson/catkin_ws/src/car_bringup/install/setup.sh

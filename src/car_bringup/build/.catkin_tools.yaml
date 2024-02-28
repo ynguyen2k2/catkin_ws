@@ -1,0 +1,6 @@
+devel_space: /home/jetson/catkin_ws/src/car_bringup/devel
+install: false
+install_space: /home/jetson/catkin_ws/src/car_bringup/install
+profile: default
+source_space: /home/jetson/catkin_ws/src/car_bringup/src
+workspace: /home/jetson/catkin_ws/src/car_bringup
