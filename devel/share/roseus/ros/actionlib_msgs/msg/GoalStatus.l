@@ -1,1 +1,0 @@
-/home/jetson/catkin_ws/devel/.private/actionlib_msgs/share/roseus/ros/actionlib_msgs/msg/GoalStatus.l

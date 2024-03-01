@@ -68,7 +68,7 @@ set(car_bringup_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(car_bringup_SOURCE_PREFIX /home/jetson/catkin_ws/src/car_bringup)
-  set(car_bringup_DEVEL_PREFIX /home/jetson/catkin_ws/devel/.private/car_bringup)
+  set(car_bringup_DEVEL_PREFIX /home/jetson/catkin_ws/devel)
   set(car_bringup_INSTALL_PREFIX "")
   set(car_bringup_PREFIX ${car_bringup_DEVEL_PREFIX})
 else()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/jetson/catkin_ws/install/lib;/home/jetson/catkin_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/jetson/catkin_ws/install/lib;/home/jetson/software/laser_app/devel/lib;/home/jetson/software/carto_ws/devel_isolated/cartographer_rviz/lib;/home/jetson/software/carto_ws/install_isolated/lib;/home/jetson/software/ar_track_ws/devel/lib;/home/jetson/software/rtabmap_ws/devel/lib;/home/jetson/software/library_ws/devel/lib;/home/jetson/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
