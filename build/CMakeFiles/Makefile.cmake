@@ -24,6 +24,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "yahboomcar_msgs/catkin_generated/yahboomcar_msgs-msg-extras.cmake.develspace.in"
   "yahboomcar_msgs/catkin_generated/yahboomcar_msgs-msg-extras.cmake.installspace.in"
   "yahboomcar_msgs/cmake/yahboomcar_msgs-genmsg.cmake"
+  "yahboomcar_nav/catkin_generated/ordered_paths.cmake"
+  "yahboomcar_nav/catkin_generated/package.cmake"
   "/home/jetson/catkin_ws/devel/share/yahboomcar_msgs/cmake/yahboomcar_msgs-msg-paths.cmake"
   "/home/jetson/catkin_ws/src/CMakeLists.txt"
   "/home/jetson/catkin_ws/src/yahboomcar_bringup/CMakeLists.txt"
@@ -34,6 +36,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/jetson/catkin_ws/src/yahboomcar_description/package.xml"
   "/home/jetson/catkin_ws/src/yahboomcar_msgs/CMakeLists.txt"
   "/home/jetson/catkin_ws/src/yahboomcar_msgs/package.xml"
+  "/home/jetson/catkin_ws/src/yahboomcar_nav/CMakeLists.txt"
+  "/home/jetson/catkin_ws/src/yahboomcar_nav/package.xml"
   "/opt/ros/noetic/share/actionlib/cmake/actionlib-msg-extras.cmake"
   "/opt/ros/noetic/share/actionlib/cmake/actionlibConfig-version.cmake"
   "/opt/ros/noetic/share/actionlib/cmake/actionlibConfig.cmake"
@@ -267,6 +271,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "yahboomcar_ctrl/CMakeFiles/CMakeDirectoryInformation.cmake"
   "yahboomcar_description/CMakeFiles/CMakeDirectoryInformation.cmake"
   "yahboomcar_msgs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "yahboomcar_nav/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:

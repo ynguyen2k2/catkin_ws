@@ -135,6 +135,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/jetson/catkin_ws/build/yahboomcar_ctrl/cmake_install.cmake")
   include("/home/jetson/catkin_ws/build/yahboomcar_description/cmake_install.cmake")
   include("/home/jetson/catkin_ws/build/yahboomcar_msgs/cmake_install.cmake")
+  include("/home/jetson/catkin_ws/build/yahboomcar_nav/cmake_install.cmake")
 
 endif()
 

@@ -58,6 +58,7 @@ all: yahboomcar_bringup/all
 all: yahboomcar_ctrl/all
 all: yahboomcar_description/all
 all: yahboomcar_msgs/all
+all: yahboomcar_nav/all
 
 .PHONY : all
 
@@ -67,6 +68,7 @@ preinstall: yahboomcar_bringup/preinstall
 preinstall: yahboomcar_ctrl/preinstall
 preinstall: yahboomcar_description/preinstall
 preinstall: yahboomcar_msgs/preinstall
+preinstall: yahboomcar_nav/preinstall
 
 .PHONY : preinstall
 
@@ -81,6 +83,7 @@ clean: yahboomcar_bringup/clean
 clean: yahboomcar_ctrl/clean
 clean: yahboomcar_description/clean
 clean: yahboomcar_msgs/clean
+clean: yahboomcar_nav/clean
 
 .PHONY : clean
 
@@ -289,6 +292,24 @@ yahboomcar_msgs/clean: yahboomcar_msgs/CMakeFiles/_yahboomcar_msgs_generate_mess
 yahboomcar_msgs/clean: yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_generate_messages_eus.dir/clean
 
 .PHONY : yahboomcar_msgs/clean
+
+#=============================================================================
+# Directory level rules for directory yahboomcar_nav
+
+# Recursive "all" directory target.
+yahboomcar_nav/all:
+
+.PHONY : yahboomcar_nav/all
+
+# Recursive "preinstall" directory target.
+yahboomcar_nav/preinstall:
+
+.PHONY : yahboomcar_nav/preinstall
+
+# Recursive "clean" directory target.
+yahboomcar_nav/clean:
+
+.PHONY : yahboomcar_nav/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
