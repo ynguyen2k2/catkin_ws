@@ -114,6 +114,13 @@
 /home/jetson/catkin_ws/build/yahboomcar_description/CMakeFiles/rebuild_cache.dir
 /home/jetson/catkin_ws/build/yahboomcar_description/CMakeFiles/edit_cache.dir
 /home/jetson/catkin_ws/build/yahboomcar_description/CMakeFiles/test.dir
+/home/jetson/catkin_ws/build/yahboomcar_laser/CMakeFiles/install/strip.dir
+/home/jetson/catkin_ws/build/yahboomcar_laser/CMakeFiles/install/local.dir
+/home/jetson/catkin_ws/build/yahboomcar_laser/CMakeFiles/install.dir
+/home/jetson/catkin_ws/build/yahboomcar_laser/CMakeFiles/list_install_components.dir
+/home/jetson/catkin_ws/build/yahboomcar_laser/CMakeFiles/rebuild_cache.dir
+/home/jetson/catkin_ws/build/yahboomcar_laser/CMakeFiles/edit_cache.dir
+/home/jetson/catkin_ws/build/yahboomcar_laser/CMakeFiles/test.dir
 /home/jetson/catkin_ws/build/yahboomcar_msgs/CMakeFiles/list_install_components.dir
 /home/jetson/catkin_ws/build/yahboomcar_msgs/CMakeFiles/rebuild_cache.dir
 /home/jetson/catkin_ws/build/yahboomcar_msgs/CMakeFiles/edit_cache.dir

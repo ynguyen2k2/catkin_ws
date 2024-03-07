@@ -57,6 +57,7 @@ all: gtest/all
 all: yahboomcar_bringup/all
 all: yahboomcar_ctrl/all
 all: yahboomcar_description/all
+all: yahboomcar_laser/all
 all: yahboomcar_msgs/all
 all: yahboomcar_nav/all
 
@@ -67,6 +68,7 @@ preinstall: gtest/preinstall
 preinstall: yahboomcar_bringup/preinstall
 preinstall: yahboomcar_ctrl/preinstall
 preinstall: yahboomcar_description/preinstall
+preinstall: yahboomcar_laser/preinstall
 preinstall: yahboomcar_msgs/preinstall
 preinstall: yahboomcar_nav/preinstall
 
@@ -82,6 +84,7 @@ clean: gtest/clean
 clean: yahboomcar_bringup/clean
 clean: yahboomcar_ctrl/clean
 clean: yahboomcar_description/clean
+clean: yahboomcar_laser/clean
 clean: yahboomcar_msgs/clean
 clean: yahboomcar_nav/clean
 
@@ -255,6 +258,24 @@ yahboomcar_description/preinstall:
 yahboomcar_description/clean:
 
 .PHONY : yahboomcar_description/clean
+
+#=============================================================================
+# Directory level rules for directory yahboomcar_laser
+
+# Recursive "all" directory target.
+yahboomcar_laser/all:
+
+.PHONY : yahboomcar_laser/all
+
+# Recursive "preinstall" directory target.
+yahboomcar_laser/preinstall:
+
+.PHONY : yahboomcar_laser/preinstall
+
+# Recursive "clean" directory target.
+yahboomcar_laser/clean:
+
+.PHONY : yahboomcar_laser/clean
 
 #=============================================================================
 # Directory level rules for directory yahboomcar_msgs

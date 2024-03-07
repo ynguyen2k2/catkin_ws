@@ -576,6 +576,12 @@ yahboomcar_description_BINARY_DIR:STATIC=/home/jetson/catkin_ws/build/yahboomcar
 yahboomcar_description_SOURCE_DIR:STATIC=/home/jetson/catkin_ws/src/yahboomcar_description
 
 //Value Computed by CMake
+yahboomcar_laser_BINARY_DIR:STATIC=/home/jetson/catkin_ws/build/yahboomcar_laser
+
+//Value Computed by CMake
+yahboomcar_laser_SOURCE_DIR:STATIC=/home/jetson/catkin_ws/src/yahboomcar_laser
+
+//Value Computed by CMake
 yahboomcar_msgs_BINARY_DIR:STATIC=/home/jetson/catkin_ws/build/yahboomcar_msgs
 
 //Value Computed by CMake
@@ -735,7 +741,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
