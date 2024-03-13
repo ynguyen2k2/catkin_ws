@@ -155,7 +155,8 @@ class Multipoint_navigation:
                 x = self.markerArray.markers[self.index - 1].pose.position.x
                 y = self.markerArray.markers[self.index - 1].pose.position.y
                 self.PubTargetPoint(x, y)
-                # 不允许再次尝试前往未到达的目标点 || It is not allowed to try again to reach the unreached target point
+                # 不允许再次尝试前往未到达的目标点 || It is not allowedcd ~
+                #to try again to reach the unreached target point
                 self.try_again = 0
             # 继续前往下一个目标点 || Continue to the next target point
             elif self.index < len(self.markerArray.markers):
