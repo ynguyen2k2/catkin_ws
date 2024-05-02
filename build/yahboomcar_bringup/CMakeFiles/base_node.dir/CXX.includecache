@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/jetson/catkin_ws/src/yahboomcar_bringup/include/yahboomcar_bringup/base.h
+ros/ros.h
+-
+string.h
+-
+tf/transform_broadcaster.h
+-
+
 /home/jetson/catkin_ws/src/yahboomcar_bringup/src/base.cpp
 base.h
 /home/jetson/catkin_ws/src/yahboomcar_bringup/src/base.h

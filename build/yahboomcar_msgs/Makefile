@@ -198,36 +198,6 @@ yahboomcar_msgs_generate_messages_lisp/fast:
 .PHONY : yahboomcar_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
-yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/rule:
-	cd /home/jetson/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/rule
-.PHONY : yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/rule
-
-# Convenience name for target.
-yahboomcar_msgs_geneus: yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/rule
-
-.PHONY : yahboomcar_msgs_geneus
-
-# fast build rule for target.
-yahboomcar_msgs_geneus/fast:
-	cd /home/jetson/catkin_ws/build && $(MAKE) -f yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/build.make yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/build
-.PHONY : yahboomcar_msgs_geneus/fast
-
-# Convenience name for target.
-yahboomcar_msgs/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/jetson/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yahboomcar_msgs/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : yahboomcar_msgs/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: yahboomcar_msgs/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/jetson/catkin_ws/build && $(MAKE) -f yahboomcar_msgs/CMakeFiles/_catkin_empty_exported_target.dir/build.make yahboomcar_msgs/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
-
-# Convenience name for target.
 yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_generate_messages.dir/rule:
 	cd /home/jetson/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_generate_messages.dir/rule
 .PHONY : yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_generate_messages.dir/rule
@@ -467,6 +437,21 @@ yahboomcar_msgs_generate_messages_eus/fast:
 	cd /home/jetson/catkin_ws/build && $(MAKE) -f yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_generate_messages_eus.dir/build.make yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_generate_messages_eus.dir/build
 .PHONY : yahboomcar_msgs_generate_messages_eus/fast
 
+# Convenience name for target.
+yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/rule:
+	cd /home/jetson/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/rule
+.PHONY : yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/rule
+
+# Convenience name for target.
+yahboomcar_msgs_geneus: yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/rule
+
+.PHONY : yahboomcar_msgs_geneus
+
+# fast build rule for target.
+yahboomcar_msgs_geneus/fast:
+	cd /home/jetson/catkin_ws/build && $(MAKE) -f yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/build.make yahboomcar_msgs/CMakeFiles/yahboomcar_msgs_geneus.dir/build
+.PHONY : yahboomcar_msgs_geneus/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -479,8 +464,6 @@ help:
 	@echo "... test"
 	@echo "... yahboomcar_msgs_gennodejs"
 	@echo "... yahboomcar_msgs_generate_messages_lisp"
-	@echo "... yahboomcar_msgs_geneus"
-	@echo "... _catkin_empty_exported_target"
 	@echo "... yahboomcar_msgs_generate_messages"
 	@echo "... _yahboomcar_msgs_generate_messages_check_deps_PointArray"
 	@echo "... _yahboomcar_msgs_generate_messages_check_deps_RobotArmArray"
@@ -500,6 +483,7 @@ help:
 	@echo "... yahboomcar_msgs_genpy"
 	@echo "... _yahboomcar_msgs_generate_messages_check_deps_Image_Msg"
 	@echo "... yahboomcar_msgs_generate_messages_eus"
+	@echo "... yahboomcar_msgs_geneus"
 .PHONY : help
 
 

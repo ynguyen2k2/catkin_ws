@@ -47,6 +47,9 @@ class Multipoint_navigation:
         self.index = 0
         # 允许再次尝试前往尚未抵达的该目标点
         self.try_again = 1
+        self.turns = 0
+        self.preset_turnsValue = 2
+        self.preset_countValue = 1
 
     def cancel(self):
         self.pub_cancelgoal.publish(GoalID())
@@ -111,6 +114,8 @@ class Multipoint_navigation:
             self.index += 1
         self.count += 1
 
+
+    
     def PubTargetPoint(self, x, y):
         pose = PoseStamped()
         pose.header.frame_id = 'map'
@@ -125,22 +130,31 @@ class Multipoint_navigation:
 
     def goal_result_callback(self, msg):
         if self.count == 0: return
-        print ("Get the status of reaching the target point!!!")
+        # rospy.loginfo("Get the status of reaching the target point!!!")
+        rospy.loginfo("msg: "+ str(msg))
+        
+
         # 到达目标点 || Reach the target point
         if msg.status.status == 3:
             self.try_again = 1
             # 本轮巡航完成，重新开始巡航 || This round of cruise is completed, restart cruise
             if self.index == self.count:
-                print ('Reach the target point ' + str(self.index - 1) + '.')
+                rospy.loginfo('Reach the target point 1 index ' + str(self.index - 1) + '.')
                 self.index = 0
                 x = self.markerArray.markers[self.index].pose.position.x
                 y = self.markerArray.markers[self.index].pose.position.y
                 self.PubTargetPoint(x, y)
+                self.turns += 1
+                if self.turns == self.preset_turnsValue:
+                    self.turns = 0
+                    rospy.sleep(10)
+                rospy.loginfo("index: "+str(self.index)+" count: "+str(self.count)+", turns: "+str(self.turns))
+                rospy.loginfo("preset_countValue: "+str(self.preset_countValue)+", preset_turnsValue: "+str(self.preset_turnsValue))
                 # 巡航下一个点 || Cruise to the next point
                 self.index += 1
             # 巡航本轮剩下的点 || Cruise the remaining points of the round
             elif self.index < self.count:
-                print ('Reach the target point ' + str(self.index - 1) + '.')
+                rospy.loginfo('Reach the target point 2 index ' + str(self.index - 1) + '.')
                 x = self.markerArray.markers[self.index].pose.position.x
                 y = self.markerArray.markers[self.index].pose.position.y
                 self.PubTargetPoint(x, y)

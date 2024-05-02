@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("process_marker_rqt")
 subdirs("yahboomcar_bringup")
 subdirs("yahboomcar_ctrl")
 subdirs("yahboomcar_description")

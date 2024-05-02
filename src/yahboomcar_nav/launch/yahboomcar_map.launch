@@ -13,8 +13,8 @@
     </group>
     <!--include file="$(find yahboomcar_nav)/launch/library/app.launch"/-->
     <group if="$(arg use_rviz)">
-        <include if="$(eval arg('map_type') != 'cartographer')"
-                 file="$(find yahboomcar_nav)/launch/view/view_map.launch"/>
+        <include if="$(eval arg('map_type') != 'cartographer')"l
+                 file="$(find yahboomcar_nav)/launch/view/view_map.aunch"/>
         <include if="$(eval arg('map_type') == 'cartographer')"
                  file="$(find yahboomcar_nav)/launch/view/view_cartographer.launch"/>
     </group>
